@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         ContentResolver contentResolver = getContentResolver();
         final Cursor cursor = contentResolver.query(CalendarContract.Calendars.CONTENT_URI,
                 tempList.toArray(new String[tempList.size()]), null, null, null);
+
+
         if (cursor.moveToFirst()) {
             int columnsQty = cursor.getColumnCount();
             while (cursor.moveToNext()) {
