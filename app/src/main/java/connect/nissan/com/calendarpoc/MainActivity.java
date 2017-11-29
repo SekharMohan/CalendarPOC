@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     String[] calendarProjection =
             new String[] {
+        
+        
+        
 
                     CalendarContract.Calendars._ID,
                     CalendarContract.Calendars.ACCOUNT_NAME,
